@@ -21,7 +21,7 @@ app.set('view engine', 'html')
 app.use('/api',require('./routes/routes')(express));
 
 app.get('/',(req,res) => {
-    res.render('show');
+    res.render('index');
 })
 
 app.listen(config.port, () => {
